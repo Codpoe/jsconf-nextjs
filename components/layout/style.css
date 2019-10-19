@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.layout {
+  width: 800px;
+  margin: 0 auto;
+  padding: 0 10px;
+  font-size: 14px;
+  color: #444;
+}
+
+.layout-header {
+  margin: 30px 0;
+  font-size: 20px;
+  color: #222;
+}
+
+.layout-footer {
+  margin: 30px 0;
+  font-size: 12px;
+  text-align: center;
+  color: #999;
+}
