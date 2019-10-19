@@ -1,7 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 import fetch from 'isomorphic-unfetch';
-import '../styles/index.css';
+import Layout from '../components/layout/index';
+import '../styles/index.scss';
 
 export default class Index extends React.Component {
   static async getInitialProps({ query }) {
@@ -18,17 +19,20 @@ export default class Index extends React.Component {
   render() {
     const { repos } = this.props;
     console.log(repos)
+
     return (
-      <div className="index-page">
-        <ul className="index-page__repos">
-          {repos.map(repo => (
-            <a key={repo.name} className="index-page__repo" href={repo.url}>
-              <h1 className="index-page__repo-name">{repo.name}</h1>
-              {repo.stargazers_count} ⭐
-            </a>
-          ))}
-        </ul>
-      </div>
+      <Layout>
+        <div className="index-page">
+          <ul className="index-page__repos">
+            {repos.map(repo => (
+              <a key={repo.name} className="index-page__repo" href={repo.url}>
+                <h1 className="index-page__repo-name">{repo.name}</h1>
+                {repo.stargazers_count} ⭐
+              </a>
+            ))}
+          </ul>
+        </div>
+      </Layout>
     );
   }
 }

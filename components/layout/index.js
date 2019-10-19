@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Button } from 'zent';
-import './style.css';
+import './style.scss';
 
 export default props => (
   <div className="layout">
