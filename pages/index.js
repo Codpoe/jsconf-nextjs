@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import fetch from 'isomorphic-unfetch';
-import Layout from '../components/layout/index';
+import Layout from '../components/layout/index.tsx';
 import '../styles/index.css';
 
 export default class Index extends React.Component {

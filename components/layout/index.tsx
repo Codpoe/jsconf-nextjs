@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Link from 'next/link';
 import { Button } from 'zent';
 import './style.css';
