@@ -1,6 +1,5 @@
-// @ts-nocheck
-import Link from 'next/link';
 import { Button } from 'zent';
+import 'zent/css/index.css';
 import './style.css';
 
 export default props => (
@@ -8,9 +7,9 @@ export default props => (
     <header className="layout-header">
       <h1 className="layout-title">JSConf</h1>
       <div>
-        <Link href="/">HOME</Link>
-        <Link href="/pk">PK</Link>
-        <Link href="/about">ABOUT</Link>
+        <Button href="/" bordered={false}>HOME</Button>
+        <Button href="/pk" bordered={false}>PK</Button>
+        <Button href="/about" bordered={false}>ABOUT</Button>
       </div>
     </header>
 
