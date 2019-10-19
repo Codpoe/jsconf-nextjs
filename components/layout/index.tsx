@@ -17,6 +17,8 @@ export default props => (
       {props.children}
     </div>
 
-    <footer className="layout-footer">Powered by <Button href="https://github.com/youzan/zent">youzan/zent</Button></footer>
+    <footer className="layout-footer">
+        Powered by <a className="layout-footer__link" href="https://github.com/zeit/next.js" >next.js</a> ❤️
+      </footer>
   </div>
 );

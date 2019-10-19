@@ -1,3 +1,46 @@
-.index-page {
+.index-page__repo {
+  display: block;
+  padding: 30px 0;
+}
 
+.index-page__repo:nth-child(n+1) {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.index-page__repo-header {
+  display: flex;
+  align-items: center;
+}
+
+.index-page__repo-name {
+  font-size: 24px;
+  font-weight: 600;
+  color: #38f;
+}
+
+.index-page__repo-preview {
+  margin-left: 20px;
+  color: #999;
+}
+
+.index-page__repo-qrcode {
+  width: 200px;
+  height: 200px;
+}
+
+.index-page__repo-desc {
+  margin-top: 16px;
+  font-size: 16px;
+}
+
+.index-page__repo-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  font-size: 16px;
+}
+
+.index-page__repo-footer > li {
+  width: 120px;
 }
